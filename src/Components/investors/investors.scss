@@ -1,0 +1,33 @@
+.investors-container {
+  margin-top: 3rem;
+  display: flex;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+.investors-heading {
+    width: 45%;
+    position: relative;
+    right: 10%;
+  p {
+    color: #935073;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  h1{
+    font-size: 50px !important;
+  }
+}
+.investors-data{
+    width: 50%;
+}
+#investor-logo{
+    display: flex;
+    flex-direction: row;
+    width: 430px;
+    div{
+        width: 50%;
+    }
+}
+#about-investors{
+    display: flex;
+}

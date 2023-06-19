@@ -1,0 +1,28 @@
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+}
+.logo-container{
+    margin-left: 60px;
+}
+.navbar-content{
+    
+}
+.menu{
+    padding-right: 20px;
+    color: rgba(0,0,0,.55);
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;       
+}
+.sign-up{
+    background-color: #903F6D;
+    color: #ffffff !important;
+    border-radius: 40px;
+    width: 120px;
+    text-align: center;
+    border:none;
+    font-weight: 700!important;
+    padding-right: 7px;
+    height: 35px;
+}
