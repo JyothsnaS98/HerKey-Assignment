@@ -60,7 +60,7 @@ function News() {
                 <div key={index}>
                  <div className='carousel-body'>
                     <div className='img-block'>
-                        <img src={card.imageSrc} className='news-image'/>
+                        <img src={card.imageSrc} className='news-image' alt="img"/>
                     </div>
                     <div>
                         <p id="block-head">{card.title}</p>

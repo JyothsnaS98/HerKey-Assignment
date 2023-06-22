@@ -4,9 +4,8 @@ import "./ourteam.scss";
 import "../carousel/carousel.scss";
 import Aditi from "../../assets/Aditi-Kothari.png";
 import Bharathi from "../../assets/Bharathi.png";
-import CustomArrows from "../carousel";
-import Slider from "react-slick";
 import Carousel from "../carousel";
+import ReadMore from "../read-more";
 function OurTeam() {
   const data = [
     {
@@ -14,7 +13,7 @@ function OurTeam() {
       title: "Aditi Kothari",
       designation: "Founder & CEO",
       description:
-        "HerKey: India's Largest Career Engagement Platform for Women. Women in India can engage with employers, explore opportunities, learn, connect with peers, career champions and create a successful professional journey.",
+        "HerKey: India's Largest Career Engagement Platform for Women. Women in India can engage with employers, explore opportunities, learn, connect with peers, career champions and create a successful professional journey. HerKey: India's Largest Career Engagement Platform for Women. Women in India can engage with employers, explore opportunities, learn, connect with peers, career champions and create a successful professional journey.",
       features: ["Free Wifi", "Free breakfast"],
     },
     {
@@ -22,7 +21,7 @@ function OurTeam() {
       title: "Bharathi Felix",
       designation: "Avp-Finance",
       description:
-        "HerKey: India's Largest Career Engagement Platform for Women. Women in India can engage with employers, explore opportunities, learn, connect with peers, career champions and create a successful professional journey.",
+        "HerKey: India's Largest Career Engagement Platform for Women. Women in India can engage with employers, explore opportunities, learn, connect with peers, career champions and create a successful professional journey. HerKey: India's Largest Career Engagement Platform for Women. Women in India can engage with employers, explore opportunities, learn, connect with peers, career champions and create a successful professional journey.",
       features: ["Free Wifi", "Free breakfast"],
     },
     {
@@ -30,7 +29,7 @@ function OurTeam() {
       title: "Aditi Kothari",
       designation: "Founder & CEO",
       description:
-        "HerKey: India's Largest Career Engagement Platform for Women. Women in India can engage with employers, explore opportunities, learn, connect with peers, career champions and create a successful professional journey.",
+        "HerKey: India's Largest Career Engagement Platform for Women. Women in India can engage with employers, explore opportunities, learn, connect with peers, career champions and create a successful professional journey. HerKey: India's Largest Career Engagement Platform for Women. Women in India can engage with employers, explore opportunities, learn, connect with peers, career champions and create a successful professional journey.",
       features: ["Free Wifi", "Free breakfast"],
     },
     {
@@ -38,7 +37,7 @@ function OurTeam() {
       title: "Aditi Kothari",
       designation: "Founder & CEO",
       description:
-        "HerKey: India's Largest Career Engagement Platform for Women. Women in India can engage with employers, explore opportunities, learn, connect with peers, career champions and create a successful professional journey.",
+        "HerKey: India's Largest Career Engagement Platform for Women. Women in India can engage with employers, explore opportunities, learn, connect with peers, career champions and create a successful professional journey. HerKey: India's Largest Career Engagement Platform for Women. Women in India can engage with employers, explore opportunities, learn, connect with peers, career champions and create a successful professional journey.",
       features: ["Free Wifi", "Free breakfast"],
     },
   ];
@@ -91,14 +90,14 @@ function OurTeam() {
                       </div>
                     </div>
                     <div className="description">
-                      <p>{card.description}</p>
+                      <ReadMore>{card.description}</ReadMore>
                     </div>
                   </div>
                 </div>
               ))}
             </Carousel>
           </div>
-            <h2>Our Advisors</h2>
+          <h2>Our Advisors</h2>
           <div id="advisors">
             <div className="about-advisors">
               <div className="people-data">
@@ -110,13 +109,16 @@ function OurTeam() {
                 </div>
               </div>
               <div className="description">
-                <p>
-                  {" "}
+                <ReadMore>
                   "HerKey: India's Largest Career Engagement Platform for Women.
                   Women in India can engage with employers, explore
                   opportunities, learn, connect with peers, career champions and
-                  create a successful professional journey.",
-                </p>
+                  create a successful professional journey. HerKey: India's
+                  Largest Career Engagement Platform for Women. Women in India
+                  can engage with employers, explore opportunities, learn,
+                  connect with peers, career champions and create a successful
+                  professional journey.",
+                </ReadMore>
               </div>
             </div>
             <div className="about-advisors">
@@ -129,13 +131,16 @@ function OurTeam() {
                 </div>
               </div>
               <div className="description">
-                <p>
-                  {" "}
+                <ReadMore>
                   "HerKey: India's Largest Career Engagement Platform for Women.
                   Women in India can engage with employers, explore
                   opportunities, learn, connect with peers, career champions and
-                  create a successful professional journey.",
-                </p>
+                  create a successful professional journey. HerKey: India's
+                  Largest Career Engagement Platform for Women. Women in India
+                  can engage with employers, explore opportunities, learn,
+                  connect with peers, career champions and create a successful
+                  professional journey.",
+                </ReadMore>
               </div>
             </div>
           </div>

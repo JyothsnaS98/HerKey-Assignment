@@ -5,41 +5,42 @@ import Aditi from "../../assets/Aditi-Kothari.png";
 import Bharathi from "../../assets/Bharathi.png";
 import "./investors.scss";
 import Carousel from "../carousel";
+import ReadMore from "../read-more";
 function Investors() {
-    const data = [
-        {
-          imageSrc: Aditi,
-          title: "Aditi Kothari",
-          designation: "Founder & CEO",
-          description:
-            "HerKey: India's Largest Career Engagement Platform for Women. Women in India can engage with employers, explore opportunities, learn, connect with peers, career champions and create a successful professional journey.",
-          features: ["Free Wifi", "Free breakfast"],
-        },
-        {
-          imageSrc: Bharathi,
-          title: "Bharathi Felix",
-          designation: "Avp-Finance",
-          description:
-            "HerKey: India's Largest Career Engagement Platform for Women. Women in India can engage with employers, explore opportunities, learn, connect with peers, career champions and create a successful professional journey.",
-          features: ["Free Wifi", "Free breakfast"],
-        },
-        {
-          imageSrc: Aditi,
-          title: "Aditi Kothari",
-          designation: "Founder & CEO",
-          description:
-            "HerKey: India's Largest Career Engagement Platform for Women. Women in India can engage with employers, explore opportunities, learn, connect with peers, career champions and create a successful professional journey.",
-          features: ["Free Wifi", "Free breakfast"],
-        },
-        {
-          imageSrc: Aditi,
-          title: "Aditi Kothari",
-          designation: "Founder & CEO",
-          description:
-            "HerKey: India's Largest Career Engagement Platform for Women. Women in India can engage with employers, explore opportunities, learn, connect with peers, career champions and create a successful professional journey.",
-          features: ["Free Wifi", "Free breakfast"],
-        },
-      ];
+  const data = [
+    {
+      imageSrc: Aditi,
+      title: "Aditi Kothari",
+      designation: "Founder & CEO",
+      description:
+        "HerKey: India's Largest Career Engagement Platform for Women. Women in India can engage with employers, explore opportunities, learn, connect with peers, career champions and create a successful professional journey. HerKey: India's Largest Career Engagement Platform for Women. Women in India can engage with employers, explore opportunities, learn, connect with peers, career champions and create a successful professional journey.",
+      features: ["Free Wifi", "Free breakfast"],
+    },
+    {
+      imageSrc: Bharathi,
+      title: "Bharathi Felix",
+      designation: "Avp-Finance",
+      description:
+        "HerKey: India's Largest Career Engagement Platform for Women. Women in India can engage with employers, explore opportunities, learn, connect with peers, career champions and create a successful professional journey. HerKey: India's Largest Career Engagement Platform for Women. Women in India can engage with employers, explore opportunities, learn, connect with peers, career champions and create a successful professional journey.",
+      features: ["Free Wifi", "Free breakfast"],
+    },
+    {
+      imageSrc: Aditi,
+      title: "Aditi Kothari",
+      designation: "Founder & CEO",
+      description:
+        "HerKey: India's Largest Career Engagement Platform for Women. Women in India can engage with employers, explore opportunities, learn, connect with peers, career champions and create a successful professional journey. HerKey: India's Largest Career Engagement Platform for Women. Women in India can engage with employers, explore opportunities, learn, connect with peers, career champions and create a successful professional journey.",
+      features: ["Free Wifi", "Free breakfast"],
+    },
+    {
+      imageSrc: Aditi,
+      title: "Aditi Kothari",
+      designation: "Founder & CEO",
+      description:
+        "HerKey: India's Largest Career Engagement Platform for Women. Women in India can engage with employers, explore opportunities, learn, connect with peers, career champions and create a successful professional journey. HerKey: India's Largest Career Engagement Platform for Women. Women in India can engage with employers, explore opportunities, learn, connect with peers, career champions and create a successful professional journey.",
+      features: ["Free Wifi", "Free breakfast"],
+    },
+  ];
   return (
     <div className="investors-container">
       <div className="investors-heading">
@@ -70,13 +71,15 @@ function Investors() {
               </div>
             </div>
             <div className="description">
-              <p>
-                {" "}
+              <ReadMore>
                 "HerKey: India's Largest Career Engagement Platform for Women.
                 Women in India can engage with employers, explore opportunities,
                 learn, connect with peers, career champions and create a
-                successful professional journey.",
-              </p>
+                successful professional journey. HerKey: India's Largest Career
+                Engagement Platform for Women. Women in India can engage with
+                employers, explore opportunities, learn, connect with peers,
+                career champions and create a successful professional journey.",
+              </ReadMore>
             </div>
           </div>
           <div className="about-advisors">
@@ -89,22 +92,23 @@ function Investors() {
               </div>
             </div>
             <div className="description">
-              <p>
-                {" "}
+              <ReadMore>
                 "HerKey: India's Largest Career Engagement Platform for Women.
                 Women in India can engage with employers, explore opportunities,
                 learn, connect with peers, career champions and create a
-                successful professional journey.",
-              </p>
+                successful professional journey. HerKey: India's Largest Career
+                Engagement Platform for Women. Women in India can engage with
+                employers, explore opportunities, learn, connect with peers,
+                career champions and create a successful professional journey.",
+              </ReadMore>
             </div>
           </div>
         </div>
 
-
         {/* Angel Investors */}
-        <div style={{marginTop:'3rem'}}>
-            <h2 style={{marginBottom:'-2rem',textAlign:'left'}} >Our Angel Investors </h2>
-            <div style={{marginLeft:'-22px'}}>
+        <div style={{ marginTop: "3rem" }}>
+          <h2 style={{ textAlign: "left" }}>Our Angel Investors </h2>
+          <div style={{ marginLeft: "-22px" }}>
             <Carousel>
               {data.map((card, index) => (
                 <div key={index}>
@@ -123,13 +127,13 @@ function Investors() {
                       </div>
                     </div>
                     <div className="description">
-                      <p>{card.description}</p>
+                      <ReadMore>{card.description}</ReadMore>
                     </div>
                   </div>
                 </div>
               ))}
             </Carousel>
-            </div>
+          </div>
         </div>
       </div>
     </div>
