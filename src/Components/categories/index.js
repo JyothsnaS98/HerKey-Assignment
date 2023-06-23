@@ -31,7 +31,7 @@ function Categories() {
             }
           ></div>
           <div
-            onClick={() => setCategory({ category: "community" })}
+            onClick={() => setCategory({ category: "communities" })}
             className={
               category["category"] === "community"
                 ? `selected-category-img-${category["category"]}`
