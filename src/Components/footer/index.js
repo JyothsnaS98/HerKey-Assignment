@@ -10,7 +10,11 @@ function Footer() {
     <div className="footer">
       <h1>
         We are at{" "}
-        <strong ><a href="https://www.jobsforher.com/" style={{ color: "#959F5A" }}>jobsforher.com &gt;&gt;</a></strong>
+        <strong>
+          <a href="https://www.jobsforher.com/" style={{ color: "#959F5A" }}>
+            jobsforher.com &gt;&gt;
+          </a>
+        </strong>
         Until <strong style={{ color: "#935073" }}>2024</strong>
       </h1>
       <div className="footer-container">
@@ -59,8 +63,14 @@ function Footer() {
         </div>
         <small id="bottom">
           <a>@Copyright JobsForHer 2023 |</a>
-          <a href="https://www.jobsforher.com/terms-of-use"> Terms and Conditions |</a>
-            <a href="https://www.jobsforher.com/privacy-policy"> Privacy Policy</a>
+          <a href="https://www.jobsforher.com/terms-of-use">
+            {" "}
+            Terms and Conditions |
+          </a>
+          <a href="https://www.jobsforher.com/privacy-policy">
+            {" "}
+            Privacy Policy
+          </a>
         </small>
       </div>
     </div>

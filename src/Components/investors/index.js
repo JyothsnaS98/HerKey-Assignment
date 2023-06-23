@@ -3,9 +3,9 @@ import kalaari from "../../assets/Kalaari-Logo.svg";
 import asst360 from "../../assets/360-WEB.svg";
 import Aditi from "../../assets/Aditi-Kothari.png";
 import Bharathi from "../../assets/Bharathi.png";
-import "./investors.scss";
 import Carousel from "../carousel";
 import ReadMore from "../read-more";
+import "./investors.scss";
 function Investors() {
   const data = [
     {

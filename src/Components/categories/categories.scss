@@ -1,5 +1,4 @@
 .category-wrapper {
-  
   margin-top: 3rem;
 }
 .category-heading {
@@ -14,9 +13,36 @@
   width: 54%;
   left: 23%;
   position: relative;
-  .category-img {
-    width: 50%;
+
+  .oppurtunity-category-img,
+  .learning-category-img,
+  .selected-category-img-learning,
+  .selected-category-img-oppurtunities,
+  .community-category-img,
+  .selected-category-img-community {
+    width: 83%;
+    background-repeat: no-repeat;
+    height: 210px;
   }
+  .oppurtunity-category-img {
+    background-image: url("../../assets/oppurtunity.webp");
+  }
+}
+.learning-category-img {
+  background-image: url("../../assets/learning.png");
+}
+.community-category-img {
+  background-image: url("../../assets/web-Comm-white-1.webp");
+}
+
+.selected-category-img-learning {
+  background-image: url("../../assets/learn-1.png");
+}
+.selected-category-img-oppurtunities {
+  background-image: url("../../assets/Opp-1.webp");
+}
+.selected-category-img-community {
+  background-image: url("../../assets/comm-1.webp");
 }
 .data-block {
   display: flex;
@@ -32,20 +58,19 @@
     margin: 0.5rem !important;
     height: 235px;
   }
-  h5{
+  h5 {
     font-size: 26px;
     text-align: left;
     padding-left: 30px;
     margin-bottom: 15px;
     font-family: "Maven Pro", sans-serif;
-
   }
   p {
     font-family: "Poppins", sans-serif;
-    width: 86%;
-    margin-left: 20px;
+    width: 72%;
+    margin-left: 41px;
     text-align: left;
-    font-weight: 300;
+    font-weight: 400;
   }
   button {
     background-color: #935073;

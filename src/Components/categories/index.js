@@ -2,41 +2,42 @@ import React, { useState } from "react";
 import oppurtunity from "../../assets/oppurtunity.webp";
 import learning from "../../assets/learning.png";
 import community from "../../assets/web-Comm-white-1.webp";
+import opp1 from "../../assets/Opp-1.webp";
+import learn1 from "../../assets/learn-1.png";
+import comm1 from "../../assets/comm-1.webp";
 import "./categories.scss";
 function Categories() {
   const [category, setCategory] = useState("");
-  const categories = [
-    {
-      category: "oppurtunities",
-      img: oppurtunity,
-    },
-    {
-      category: "learning",
-      img: learning,
-    },
-    {
-      category: "communities",
-      img: community,
-    },
-  ];
-  console.log("Cat", category);
-  console.log(category["category"] === "learning");
 
   return (
     <div className=" category-wrapper">
       <div className="main">
         <h1 className="category-heading">So how do we do it?</h1>
         <div className="category-btn">
-          {categories.map((data, index) => {
-            return (
-              <div
-                onClick={() => setCategory({ category: data.category })}
-                className="category-img"
-              >
-                <img src={data.img} alt="img" />
-              </div>
-            );
-          })}
+          <div
+            onClick={() => setCategory({ category: "oppurtunities" })}
+            className={
+              category["category"] === "oppurtunities"
+                ? `selected-category-img-${category["category"]}`
+                : "oppurtunity-category-img"
+            }
+          ></div>
+          <div
+            onClick={() => setCategory({ category: "learning" })}
+            className={
+              category["category"] === "learning"
+                ? `selected-category-img-${category["category"]}`
+                : "learning-category-img"
+            }
+          ></div>
+          <div
+            onClick={() => setCategory({ category: "community" })}
+            className={
+              category["category"] === "community"
+                ? `selected-category-img-${category["category"]}`
+                : "community-category-img"
+            }
+          ></div>
         </div>
         <div className="data-block">
           {category["category"] !== "learning" &&
